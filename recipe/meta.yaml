@@ -14,7 +14,6 @@ build:
     - boosting_example.py = bob.learn.boosting.examples.mnist:main
   number: 1
   skip: true  # [win]
-  script: python -B setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
