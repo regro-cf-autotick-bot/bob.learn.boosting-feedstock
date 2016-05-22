@@ -12,7 +12,7 @@ source:
 build:
   entry_points:
     - boosting_example.py = bob.learn.boosting.examples.mnist:main
-  number: 1
+  number: 2
   skip: true  # [win]
 
 requirements:
@@ -25,6 +25,7 @@ requirements:
     - bob.blitz
     - bob.core
     - bob.io.base
+    - boost 1.60.*
     - cmake
     - pkg-config
 
@@ -36,6 +37,7 @@ requirements:
     - bob.blitz
     - bob.core
     - bob.io.base
+    - boost 1.60.*
 
 test:
   commands:
