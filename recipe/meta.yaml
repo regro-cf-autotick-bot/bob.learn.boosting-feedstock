@@ -1,4 +1,4 @@
-{% set version = "2.0.7" %}
+{% set version = "2.0.9" %}
 
 package:
   name: bob.learn.boosting
@@ -6,13 +6,13 @@ package:
 
 source:
   fn: bob.learn.boosting-{{ version }}.zip
-  url: https://pypi.python.org/packages/source/b/bob.learn.boosting/bob.learn.boosting-{{ version }}.zip
-  md5: d02c5be0c59f55587409a558a98bf04e
+  url: https://pypi.io/packages/source/b/bob.learn.boosting/bob.learn.boosting-{{ version }}.zip
+  md5: 2566e976ef741507de7d9b958afc9a81
 
 build:
   entry_points:
     - boosting_example.py = bob.learn.boosting.examples.mnist:main
-  number: 4
+  number: 0
   skip: true  # [win]
 
 requirements:
@@ -55,7 +55,7 @@ test:
     - nose
 
 about:
-  home: https://github.com/bioidiap/bob.learn.boosting
+  home: https://www.idiap.ch/software/bob/
   license: GNU General Public License v3 (GPLv3)
   summary: Boosting framework for Bob
 
