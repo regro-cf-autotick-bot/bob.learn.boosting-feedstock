@@ -1,4 +1,4 @@
-{% set version = "2.0.10" %}
+{% set version = "2.0.13" %}
 
 package:
   name: bob.learn.boosting
@@ -7,12 +7,12 @@ package:
 source:
   fn: bob.learn.boosting-{{ version }}.zip
   url: https://pypi.io/packages/source/b/bob.learn.boosting/bob.learn.boosting-{{ version }}.zip
-  md5: 2666fcac9bd2b375326d7c78af80ee7c
+  md5: 99cc2fa9081eef6a6b5af62f153bc00d
 
 build:
   entry_points:
     - boosting_example.py = bob.learn.boosting.examples.mnist:main
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
